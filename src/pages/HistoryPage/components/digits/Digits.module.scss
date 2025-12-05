@@ -1,0 +1,21 @@
+.Digits {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    font-weight: bold;
+    gap: clamp(16px, 4vw, 50px);
+    font-size: clamp(40px, 20vw, 200px);
+
+    @media (max-width: 768px) {
+        top: 35%;
+    }
+
+    .From {
+        color: #5d5fef;
+    }
+    .To {
+        color: #ef5da8;
+    }
+}

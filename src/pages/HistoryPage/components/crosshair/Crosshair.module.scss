@@ -1,0 +1,32 @@
+.Crosshair {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.crosshairVertical {
+    position: absolute;
+    left: 50%;
+    width: 1px;
+    background: var(--outline-color);
+    height: 100%;
+    pointer-events: none;
+
+    @media (max-width: 768px) {
+        display: none;
+    }
+}
+
+.crosshairHorizontal {
+    position: absolute;
+    height: 1px;
+    top: 50%;
+    width: 100%;
+    background: var(--outline-color);
+    pointer-events: none;
+
+    @media (max-width: 768px) {
+        width: calc(100% - 40px);
+    }
+}

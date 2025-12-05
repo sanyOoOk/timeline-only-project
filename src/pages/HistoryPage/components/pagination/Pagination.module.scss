@@ -1,0 +1,35 @@
+.Pagination {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    &__title {
+        margin-bottom: 14px;
+    }
+    &__buttons {
+        display: flex;
+        gap: 20px;
+
+        @media (max-width: 768px) {
+            gap: 8px;
+        }
+    }
+}
+
+.dots {
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    left: 50%;
+    translate: -50%;
+
+    &__dot {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: rgba(var(--primary-color-rgb), 0.4);
+
+        &--selected {
+            background: var(--primary-color);
+        }
+    }
+}

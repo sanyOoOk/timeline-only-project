@@ -1,0 +1,53 @@
+.HistoryPage {
+    max-width: 1440px;
+    margin: 0 auto;
+    min-height: 100vh;
+    border-left: 1px solid var(--outline-color);
+    border-right: 1px solid var(--outline-color);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    @media (max-width: 768px) {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+.Title {
+    position: relative;
+    font-size: clamp(30px, 6vw, 56px);
+    padding-left: clamp(20px, 5vw, 78px);
+    margin-top: clamp(60px, 10vw, 170px);
+
+    @media (max-width: 768px) {
+        padding: 0;
+    }
+}
+
+.Title::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, #5d5fef 0%, #ef5da8 100%);
+
+    @media (max-width: 768px) {
+        display: none;
+    }
+}
+
+.OffsetWrapper {
+    padding-left: clamp(20px, 5vw, 80px);
+    margin-top: 393px;
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+
+    @media (max-width: 768px) {
+        padding: 0;
+        flex-direction: column-reverse;
+    }
+}
