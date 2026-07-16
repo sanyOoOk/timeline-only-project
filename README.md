@@ -1,10 +1,6 @@
 
 ## Only
 
-### Preview
-
-<a href="https://etmeow.github.io/react-timeline-project/" target="_blank">Демонстрация</a>
-
 ### Установка и запуск
 
 ```bash
@@ -62,6 +58,3 @@ src
     🌀 Swiper
     📱 React Responsive
 ```
-
-📧: u.alexandr.vl@gmail.com<br>
-Telegram: @sanyok_dev<br>
